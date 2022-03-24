@@ -14,7 +14,7 @@ import {
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
 
-export default Home = (props) => {
+export default Map = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
@@ -22,33 +22,7 @@ export default Home = (props) => {
         source={require("../../assets/windows-10-bliss-at-night-minimal-5k-bm-5120x28802.jpg")}
       >
         <View style={styles.rowContent}>
-          <Pressable
-            style={[styles.buttonContent, { backgroundColor: "red" }]}
-            onPress={() => props.navigation.navigate("List")}
-          >
-            <Text style={styles.title}>Home</Text>
-          </Pressable>
-          <Pressable
-            style={[styles.buttonContent, { backgroundColor: "blue" }]}
-            onPress={() => console.log("Button 2")}
-          >
-            <Text style={styles.title}>Perfil</Text>
-          </Pressable>
-        </View>
-
-        <View style={styles.rowContent}>
-          <Pressable
-            style={[styles.buttonContent, { backgroundColor: "pink" }]}
-            onPress={() => console.log("Button 3")}
-          >
-            <Text style={styles.title}>Lista</Text>
-          </Pressable>
-          <Pressable
-            style={[styles.buttonContent, { backgroundColor: "yellow" }]}
-            onPress={() => console.log("Button 4")}
-          >
-            <Text style={styles.title}>Mapa</Text>
-          </Pressable>
+          <Text>Map</Text>
         </View>
       </ImageBackground>
     </SafeAreaView>
