@@ -14,7 +14,7 @@ import {
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;
 
-export default Map = () => {
+export default Mapa = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
@@ -22,7 +22,7 @@ export default Map = () => {
         source={require("../../assets/windows-10-bliss-at-night-minimal-5k-bm-5120x28802.jpg")}
       >
         <View style={styles.rowContent}>
-          <Text>Map</Text>
+          <Text>Mapa</Text>
         </View>
       </ImageBackground>
     </SafeAreaView>
